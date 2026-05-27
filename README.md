@@ -14,7 +14,7 @@ El proyecto simula la suscripción de un usuario a un plan "Enterprise". El Orqu
 ## 🏛️ Arquitectura
 El proyecto está dividido en tres capas principales (Domain, Application y Presentation).
 
-<img width="1457" height="687" alt="saga" src="https://github.com/user-attachments/assets/90349722-2266-40c8-b506-99dc1d1754e6" />
+<img width="1453" height="690" alt="saga" src="https://github.com/user-attachments/assets/48899174-b4a8-4bfe-9315-65192159791f" />
 
 ## 🚀 Cómo levantar el proyecto
 

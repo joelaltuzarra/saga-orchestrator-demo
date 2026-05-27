@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/PremiumSubscriptionSaga.API/PremiumSubscriptionSaga.API.csproj" />
+    <Project Path="src/PremiumSubscriptionSaga.Application/PremiumSubscriptionSaga.Application.csproj" />
+    <Project Path="src/PremiumSubscriptionSaga.Domain/PremiumSubscriptionSaga.Domain.csproj" />
+    <Project Path="src/PremiumSubscriptionSaga.Presentation/PremiumSubscriptionSaga.Presentation.csproj" />
+  </Folder>
+</Solution>

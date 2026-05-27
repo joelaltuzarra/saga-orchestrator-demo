@@ -1,0 +1,6 @@
+@PremiumSubscriptionSaga.API_HostAddress = http://localhost:5090
+
+GET {{PremiumSubscriptionSaga.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

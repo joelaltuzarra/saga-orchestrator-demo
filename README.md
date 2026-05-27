@@ -29,6 +29,8 @@ git clone https://github.com/joelaltuzarra/saga-orchestrator-demo.git cd saga-or
 
 dotnet run --project src/PremiumSubscriptionSaga.Presentation
 
+3. Observa en la consola cómo el Orquestador atrapa el error y ejecuta automáticamente los métodos `CompensateAsync` de los pasos anteriores en orden inverso (C -> B -> A).
+
 ## 🧪 Cómo probarlo
 
 ### 1. Escenario de Éxito (Happy Path)
@@ -37,11 +39,11 @@ De forma predeterminada, correr el comando anterior ejecutará los cuatro instru
 ### 2. Escenario de Fallo y Compensación
 Para probar la compensación, debes forzar un fallo. 
 
-3. Observa en la consola cómo el Orquestador atrapa el error y ejecuta automáticamente los métodos `CompensateAsync` de los pasos anteriores en orden inverso (C -> B -> A).
 
-Caso 1 Exito
-Caso 2 No selecciona un plan
-Caso 3 No tiene cuenta activa
-Caso 4 Monto del pago inválido
-Caso 5 Error en la provisión
-Caso 6 Error en la notificación
+
+- Caso 1 Exito
+- Caso 2 No selecciona un plan
+- Caso 3 No tiene cuenta activa
+- Caso 4 Monto del pago inválido
+- Caso 5 Error en la provisión
+- Caso 6 Error en la notificación

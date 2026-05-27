@@ -5,7 +5,7 @@ using PremiumSubscriptionSaga.Domain;
 Console.WriteLine("Caso 1 exitoso\n");
 var steps = new List<ISagaStep>
 {
-    new ValidatorStep(),
+    new RequestPremumServiceStep(),
     new PaymentStep(),
     new ProvisioningStep(),
     new NotificationStep()

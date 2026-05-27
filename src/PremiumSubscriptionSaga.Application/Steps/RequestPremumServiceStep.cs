@@ -3,13 +3,13 @@ using PremiumSubscriptionSaga.Domain;
 
 namespace PremiumSubscriptionSaga.Application.Steps
 {
-    public class ValidatorStep : ISagaStep
+    public class RequestPremumServiceStep : ISagaStep
     {
-        public string Name => "ValidatorStep";
+        public string Name => "RequestPremumServiceStep";
 
         public Task CompensateAsync(SagaContext context)
         {
-            Console.WriteLine($"[{Name}] Compensación: Deshaciendo cambios para el usuario {context.UserId}.");
+            Console.WriteLine($"[{Name}] Compensación: Baja al servicio Premium para el usuario {context.UserId}.");
             return Task.CompletedTask;
         }
 
@@ -26,6 +26,8 @@ namespace PremiumSubscriptionSaga.Application.Steps
             {
                 throw new StepException("El usuario no ha seleccionado un plan válido.");
             }
+
+            Console.WriteLine($"[{Name}] Alta al servicio Premium para el usuario {context.UserId}.");
 
             return Task.CompletedTask;
         }

@@ -39,7 +39,7 @@ De forma predeterminada, correr el comando anterior ejecutará los cuatro instru
 ### 2. Escenario de Fallo y Compensación
 Para probar la compensación, debes forzar un fallo. 
 
-
+### 3. Casos de prueba
 
 - Caso 1 Exito
 - Caso 2 No selecciona un plan
